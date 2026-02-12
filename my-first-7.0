@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arif's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      padding: 60px 20px;
+      max-width: 480px;
+      margin: auto;
+    }
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    img:hover { transform: scale(1.1); }
+    h1 { font-size: 38px; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    p { font-size: 18px; margin-bottom: 25px; line-height: 1.5; }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px 5px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      color: #fff;
+    }
+
+    .btn-email { background: #ff512f; }
+    .btn-whatsapp { background: #25d366; }
+    .btn-linkedin { background: #0077b5; }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+      opacity: 0.9;
+    }
+
+    .projects {
+      margin-top: 40px;
+    }
+    .projects h2 { font-size: 28px; margin-bottom: 20px; text-decoration: underline; }
+    .projects .btn-project {
+      width: 80%;
+      display: block;
+      margin: 10px auto;
+      background: #ff6a00;
+    }
+    .projects .btn-project:nth-child(2) { background: #ff512f; }
+    .projects .btn-project:nth-child(3) { background: #f7971e; }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 32px; }
+      p { font-size: 16px; }
+      .btn { padding: 12px 20px; font-size: 14px; }
+      .projects h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile Picture -->
+    <img src="https://raw.githubusercontent.com/tubarubi845-ui/my-first-website/main/myphoto.jpg" alt="Profile Picture">
+
+    <h1>Hello, I'm Arif 👋</h1>
+    <p>Welcome to my final Mobile-ready professional GitHub Portfolio. Explore my projects and contact me!</p>
+
+    <!-- Contact Buttons -->
+    <a href="mailto:myemail@gmail.com" class="btn btn-email">Email Me</a>
+    <a href="https://wa.me/8801234567890" class="btn btn-whatsapp">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/arif-rubi" class="btn btn-linkedin">LinkedIn</a>
+
+    <!-- Projects Section -->
+    <div class="projects">
+      <h2>My Projects</h2>
+      <a href="https://github.com/tubarubi845-ui/my-first-website" class="btn btn-project">Website Project</a>
+      <a href="https://github.com/tubarubi845-ui/another-project" class="btn btn-project">Another Project</a>
+      <a href="https://github.com/tubarubi845-ui" class="btn btn-project">All Projects</a>
+    </div>
+  </div>
+</body>
+</html>
